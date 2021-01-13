@@ -4,3 +4,7 @@ p{
   text-decoration:underline;
   text-align: center;
 }
+table {
+	background-color: rgb(239, 17, 202);
+	font-family: 'Source Code Pro', monospace;
+}
