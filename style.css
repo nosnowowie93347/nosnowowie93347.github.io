@@ -19,7 +19,9 @@ table {
   border-color: brown;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+img {
+  border-radius: 50%;
+}
 
 h2 {
   font-size: medium;
