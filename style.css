@@ -22,3 +22,10 @@ p {
   color: lightpink;
   font-weight: bold;
 }
+.button {
+  background-color: magenta;
+  border: 2in;
+  color: lavender;
+  display: inline-block;
+  text-decoration: wavy;
+}
