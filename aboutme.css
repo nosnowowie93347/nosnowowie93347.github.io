@@ -3,4 +3,5 @@
 }
 .button {
     border: 3px solid #8e44ad;
+    float: left;
 }
