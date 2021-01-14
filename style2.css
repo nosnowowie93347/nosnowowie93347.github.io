@@ -7,5 +7,7 @@ p{
 table {
   background-color: rgb(239, 17, 202);
   border-width: 5px;
+  border-style: solid;
+  border-color: brown;
 	font-family: 'Source Code Pro', monospace;
 }
