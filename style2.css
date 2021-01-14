@@ -6,7 +6,6 @@ p{
 }
 table {
   background-color: rgb(239, 17, 202);
-  border-radius: 15%;
-  border: 5px;
+  border-width: 5px;
 	font-family: 'Source Code Pro', monospace;
 }
