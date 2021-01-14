@@ -24,8 +24,12 @@ p {
 }
 .button {
   background-color: magenta;
-  border: 2in;
+  border: 5px;
+  font-weight: lighter;
+  padding: 14px 40px;
   color: lavender;
   display: inline-block;
-  text-decoration: wavy;
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
