@@ -7,18 +7,18 @@ h1{
   text-align: center;
 }
 html {
-	background-color: rgb(0, 0, 255);
+	background-color: rgb(64, 73, 121)
 }
 h2 {
-	color:white;
+	color: white;
 }
 h3 {
-	color:white;
+	color: white;
 }
 p {
-	color:white;
+	color: white;
 }
 .pink {
-  color:lightpink;
+  color: lightpink;
   font-weight: bold;
 }
