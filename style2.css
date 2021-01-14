@@ -3,11 +3,14 @@ p{
   font-weight:bold;
   text-decoration:underline;
   text-align: center;
+  font-family: 'Source Code Pro', monospace;
 }
 table {
-  border-width: 3px;
+  border-width: 2.5px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   border-style: solid;
   border-color: brown;
 	font-family: 'Source Code Pro', monospace;
