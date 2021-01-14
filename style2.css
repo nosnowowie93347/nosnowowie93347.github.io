@@ -5,7 +5,9 @@ p{
   text-align: center;
 }
 table {
-  border-width: 5px;
+  border-width: 3px;
+  margin-left: auto;
+  margin-right: auto;
   border-style: solid;
   border-color: brown;
 	font-family: 'Source Code Pro', monospace;
