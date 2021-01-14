@@ -7,8 +7,10 @@ h1{
   text-align: center;
 }
 html {
+  scrollbar-color: green;
 	background-color: rgb(64, 73, 121);
 }
+
 h2 {
   font-size: medium;
 	color: white;
