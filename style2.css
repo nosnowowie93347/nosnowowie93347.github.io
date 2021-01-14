@@ -5,7 +5,7 @@ p{
   text-align: center;
 }
 table {
-  background-color: rgb(239, 17, 202);
+  /* background-color: rgb(239, 17, 202); */
   border-width: 5px;
   border-style: solid;
   border-color: brown;
