@@ -9,19 +9,7 @@ h1{
 html {
 	background-color: rgb(64, 73, 121);
 }
-table {
-  border-width: 2.5px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  border-style: solid;
-  border-color: brown;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-img {
-  border-radius: 10%;
-}
+
 
 h2 {
   font-size: medium;
