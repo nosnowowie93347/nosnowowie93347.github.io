@@ -4,7 +4,6 @@
 <title>
 Owners Page</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="./aboutme.css" rel="stylesheet" type="text/css" />
 </head>
 <h1>
     <p><a href="https://drive.google.com/file/d/1qrJfa5ru1qfgSs9vbAaBGM5CyXB7uJgr/view?usp=sharing"><input type="button" class=button value= "VIDEO"></a></p>
@@ -14,7 +13,7 @@ Owners Page</title>
 
 </h1>
 <audio controls>
-  <source src="./miichannel.mp3" type="audio/mpeg">
+  <source src="YouTube (1).mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
 </html>
