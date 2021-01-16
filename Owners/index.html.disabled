@@ -4,14 +4,17 @@
 <title>
 Owners Page</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="aboutme.css" rel="stylesheet" type="text/css" />
+<link href="./aboutme.css" rel="stylesheet" type="text/css" />
 </head>
 <h1>
-    <p class=hi>
-    </p>
     <p><a href="https://drive.google.com/file/d/1qrJfa5ru1qfgSs9vbAaBGM5CyXB7uJgr/view?usp=sharing"><input type="button" class=button value= "VIDEO"></a></p>
-    <p><a href="https://drive.google.com/drive/folders/0B0xCfUYLem6TdjdtNFR4N08xSzg?usp=sharing"><input type="button" class=button value= "SECRET FOLDER"></a></p>
-    <p><a href="https://github.com/nosnowowie93347/"><input type="button" class=button value= "Dev GitHub"></a><br /><br /></p>
-</h1>
+    <p><a href="http://bit.ly/3sxoqTV"><input type="button" class=button value= "SECRET FOLDER"></a></p>
+    <p><a href="https://github.com/nosnowowie93347/"><input type="button" class=button value= "Dev GitHub"></a></p>
+    <p><a href="http://bit.ly/2N42SOt"><input type="button" class=button value= "SECRET FOLDER 2"></a></p>
 
+</h1>
+<audio controls>
+  <source src="./miichannel.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
 </html>
