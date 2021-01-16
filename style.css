@@ -1,6 +1,6 @@
 h1{
   color: white;
-  font-family: 'Andy', 'Marquisette BTN', 'Lucida Sans', sans-serif;
+  font-family: 'Andy', 'Marquisette BTN', "Comic Sans MS", 'Lucida Sans', sans-serif;
   font-size: 290%;
   font-weight: bold;
   text-decoration: underline;
@@ -32,6 +32,7 @@ p {
   border-radius: 5%;
   font-size: 100%;
   background-color: magenta;
+  font-family: "Myfont Regular", "Comic Sans MS", "Times New Roman", "Georgia", "Arial", serif;
   font-weight: normal;
   color: lavender;
   display: inline-block;
