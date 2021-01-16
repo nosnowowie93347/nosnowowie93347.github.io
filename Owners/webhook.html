@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Discord Webhook</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!--  Styles  -->
+  <link rel="stylesheet" href="webhook.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="row" id="thing">
+  <div class="webhookcontainer">
+    <div class="stuffall">
+      <h3 style="font-family: Raleway;"><span style="color: #e74c3c;">Pandas's</span> <span style="color: #f1c40f;">Discord Webhook</span></h3>
+      <h3 style="color: #3498db; font-family: Raleway;">Normal</h3>
+      <h4><span style="font-family: Raleway; color: white;">Webhook URL </span><input id="webhookurlstuff" type=text placeholder="Webhook URL" onfocusout="hookurlfunction()" size="21"></h4>
+      <h4><span style="font-family: Raleway; color: white;">Choose a username </span><input id="user" type=text placeholder="Username" onfocusout="setUser()" size="21"></h4>
+      <h4><span style="font-family: Raleway; color: white;">Avatar    </span><input id="avatar" type=text placeholder="Avatar URL (Not Required)" onfocusout="setAvatar()" size="21"></h4>
+      <textarea id="content" type="text" placeholder="Message"></textarea>
+        <button id="send" onclick="send()">Send (Shift+Enter)</button>
+    </div>
+  </div>
+    <div id="embedversion">
+      
+    </div>
+  </div>
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
