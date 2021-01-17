@@ -11,6 +11,7 @@ Owners Page</title>
     <p><a href="https://github.com/nosnowowie93347/"><input type="button" class=button value= "Dev GitHub"></a></p>
     <p><a href="http://bit.ly/2N42SOt"><input type="button" class=button value= "SECRET FOLDER 2"></a></p>
     <p><a href="webhook.html"><input type="button" class=button value= "Webhook Sender"></a></p>
+    <p><a href="Game/game.html"><input type="button" class=button value= "Typing Game"></a></p>
     <video width="320" height="240" controls>
  		 <source src="cutepuppy.mp4" type="video/mp4">
 	Your browser does not support the video tag.

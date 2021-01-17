@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Word game</title>
+  <link href="https://fonts.googleapis.com/css?family=Pangolin|Raleway:300,700" rel="stylesheet">
+  <link rel="stylesheet" href="./css/dialog-polyfill.css">
+  <link rel="stylesheet" href="./css/master.css">
+</head>
+
+<body>
+
+  <dialog id="dialog-start" class="site-dialog">
+    <header class="dialog-header">
+      <img src="assets/images/logo.png">
+    </header>
+    <div class="dialog-content">
+      <p>The objective of the game is to type in the word shown as quickly as possible but look out as the time is ticking and every misspelled word result in a time penalty.
+        <p>Please select your difficulty level</p>
+        <button difficulty="easy" class="difficulty-btn btn btn-block">Undemanding</button>
+        <button difficulty="average" class="difficulty-btn btn btn-block btn-orange">Strenuous</button>
+        <button difficulty="insane" class="difficulty-btn btn btn-block btn-red">Merciless</button>
+    </div>
+  </dialog>
+
+  <div id="gameboard">
+    <div class="game-word"></div>
+    <div class="game-stats"></div>
+    <div class="game-messages"></div>
+    <div class="game-effects"></div>
+    <div class="game-stars"></div>
+    <div class="game-typing"></div>
+    <div class="game-word-description"></div>
+  </div>
+
+  <dialog id="dialog-game-over" class="site-dialog">
+    <header class="dialog-header">
+      <h1>Game over</h1>
+    </header>
+    <div class="dialog-content">
+      <p>Your score:</p>
+      <p class="scoreboard-score"></p>
+      <button class="scoreboard-button btn primary">Save your score</button>
+      <p>Press CTRL + R to start again</p>
+    </div>
+  </dialog>
+
+  <dialog id="dialog-scoreboard" class="site-dialog">
+    <header class="dialog-header">
+      <h1>Scoreboard</h1>
+    </header>
+    <div class="dialog-content">
+      <div class="add-score-form">
+        <p>Your score: <span class="scoreboard-score"></span></p> <input type="text" name="user" placeholder="Your name" /><button class="btn primary save-score">Save score</button></p>
+      </div>
+      <div id="scoreboard"></div>
+      <p>Press CTRL + R to start again</p>
+    </div>
+  </dialog>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="./js/dialog-polyfill.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

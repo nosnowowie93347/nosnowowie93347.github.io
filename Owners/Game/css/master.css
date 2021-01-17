@@ -1,0 +1,323 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Raleway, sans-serif;
+  height: 100vh;
+  background: url('../assets/images/background-screen.png') no-repeat bottom, url('../assets/images/background-clouds.png') no-repeat top #46aaff;
+  transition: background-color 2s;
+}
+
+
+#gameboard{
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.current-word{
+  font-family: Pangolin, sans-serif;
+  font-size: 32px;
+  text-align: center;
+  background: url('../assets/images/top-board.png') no-repeat top;
+  margin-bottom: 50px;
+  height: 105px;
+  color: #61290d;
+  line-height: 120px;
+}
+
+.game-word-description{
+  background: url('../assets/images/word-description.png');
+  max-width: 700px;
+  min-height: 125px;
+  padding: 20px 60px;
+  font-weight: bold;
+  background-size: 100%;
+  color: #61290d;
+  text-align: center;
+  margin: 100px auto;
+}
+
+.game-messages{
+  text-align: center;
+  position: absolute;
+  top: 50px;
+  right: 100px;
+}
+.game-messages .message{
+  font-weight: bold;
+  color: #045404;
+  width: 200px;
+  height: 85px;
+  line-height: 85px;
+  text-align: center;
+  display: none;
+  background: url('../assets/images/message-good.png');
+  background-size: 100%;
+}
+.game-messages .message.bad{
+  color: #000;
+  background: url('../assets/images/message-bad.png');
+  background-size: 100%;
+}
+.game-messages .message.game-over{
+  color: #000;
+  line-height: 125px;
+  width: 300px;
+  height: 125px;
+  background: url('../assets/images/message-game-over.png');
+  background-size: 100%;
+}
+
+.game-typing{
+  text-align: center;
+  margin: 75px auto 0;
+}
+.text-input{
+  display: inline-block;
+}
+.text-input input{
+  display: inline-block;
+  background: url('../assets/images/input-empty.png');
+  background-size: 100%;
+  width: 50px;
+  border-radius: 100%;
+  color: #fff;
+  height: 48px;
+  border: none;
+  font-size: 26px;
+  font-family: Pangolin, sans-serif;
+  text-align: center;
+  margin: 0 5px;
+}
+.text-input input.good{
+  background: url('../assets/images/input-good.png');
+  background-size: 100%;
+}
+.text-input input.bad{
+  background: url('../assets/images/input-bad.png');
+  background-size: 100%;
+}
+
+.game-stars{
+  text-align: center;
+  height: 50px;
+  width: 500px;
+  margin: 0 auto;
+}
+.game-stars .streak-star{
+  display: inline-block;
+  background: url('../assets/images/streak-star.png') no-repeat;
+  width: 50px;
+  height: 50px;
+  background-size: 100%;
+}
+
+.game-instruction{
+  font-size: 32px;
+}
+
+.superpower{
+  font-weight: bold;
+  font-size: 18px;
+  width: 365px;
+  height: 75px;
+  background-size: 100%;
+  color: #fff;
+  line-height: 100px;
+  margin-left: -180px;
+  position: absolute;
+  display: inline-block;
+  background: url('../assets/images/superpower.png') no-repeat center top;
+  animation: fadein 1s 1;
+}
+
+@keyframes fadein{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.game-stats{
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+.game-stats .stat{
+  height: 80px;
+  width: 150px;
+  color: #61290d;
+  font-weight: bold;
+  font-size: 22px;
+  padding-left: 105px;
+  line-height: 76px;
+  margin-bottom: 25px;
+  transition: .5s;
+}
+
+.game-stats .stat:nth-child(1){
+  background: url('../assets/images/timer.png') no-repeat;
+}
+.game-stats .stat.frozen:nth-child(1){
+  background: url('../assets/images/timer-frost.png') no-repeat;
+}
+.game-stats .stat:nth-child(2){
+  background: url('../assets/images/points.png') no-repeat;
+}
+.game-stats .stat:nth-child(3){
+  background: url('../assets/images/word-count.png') no-repeat;
+}
+dialog{
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.site-dialog {
+  overflow: hidden;
+  width: 95%;
+  max-width: 640px;
+  padding: 0;
+  border-width: 0;
+  border-radius: 5px;
+  background: transparent;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+  background: url('../assets/images/board.png') no-repeat;
+  background-size: 100%;
+  height: 610px;
+}
+.site-dialog::backdrop, dialog + .backdrop{
+  background: rgba(255,255,255,0.5);
+  text-align: center;
+}
+.site-dialog h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 25px;
+  font-weight: normal;
+  margin: 0;
+  color: #fff;
+}
+.site-dialog img{
+  margin-top: 25px;
+  max-height: 170px;
+}
+.site-dialog p {
+  font-size: 18px;
+  color: #fff;
+}
+.site-dialog .dialog-header {
+  text-align: center;
+  padding-top: 20px;
+}
+.site-dialog .dialog-content {
+  padding: 15px 45px 30px;
+  text-align: center;
+  color: #555;
+}
+.site-dialog .dialog-content p:last-of-type,
+.site-dialog .dialog-content p:only-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.btn{
+  padding: 12px 50px;
+  cursor: pointer;
+  border-radius: 3px;
+  display: inline-block;
+  min-width: 250px;
+  border: none;
+  color: #fff;
+  margin-bottom: 25px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+  font-size: 18px;
+  background-color: #0074d9;
+}
+.btn-orange{
+  background: orange;
+}
+.btn-red{
+  background: red;
+}
+.btn-block{
+  display: block;
+  margin: 15px auto;
+}
+.add-score-form input{
+  padding: 9px;
+  font-size: 18px;
+}
+
+dialog p.scoreboard-score{
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+}
+
+
+@media (max-width: 1399px){
+  .game-stats{
+    transform: scale(0.75);
+    top: 15px;
+    left: 15px;
+  }
+}
+
+
+#scoreboard{
+  max-width: 450px;
+  margin: 0 auto 10px;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  padding: 15px;
+  overflow: auto;
+  height: 240px;
+}
+#scoreboard .score{
+  overflow: hidden;
+}
+#scoreboard .score .score-user, #scoreboard .score .score-score, #scoreboard .score .score-difficulty{
+  width: 33.3%;
+  float: left;
+  text-align: left;
+}
+
+
+.game-effects{
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.explosion {
+  width: 100%;
+  height: 100px;
+  pointer-events: none;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+}
+
+.particle {
+  position: absolute;
+  width: 15px;
+  background: url('../assets/images/streak-star.png') no-repeat;
+  background-size: 100%;
+  height: 15px;
+  border-radius: 50%;
+  animation: pop .8s reverse forwards;
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    left: 50%;
+    opacity: .75;
+  }
+}
