@@ -5,6 +5,7 @@
 Owners Page</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+<link rel="stylesheet" href="main.css">
 <h1>
     <p><a href="https://drive.google.com/file/d/1qrJfa5ru1qfgSs9vbAaBGM5CyXB7uJgr/view?usp=sharing"><input type="button" class=button value= "VIDEO"></a></p>
     <p><a href="http://bit.ly/3sxoqTV"><input type="button" class=button value= "SECRET FOLDER"></a></p>
