@@ -3,11 +3,6 @@ html {
 }
 img {
 	display: block;
-	margin-left: auto;
-<<<<<<< HEAD
-	margin-right: 75%;
-=======
+	margin-left: 45%;
 	margin-right: auto;
->>>>>>> 011d66f3f629ef7948dbd5ba5710b5f7be32b9ab
-	width: 50%;
 }
