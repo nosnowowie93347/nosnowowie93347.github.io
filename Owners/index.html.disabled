@@ -7,7 +7,9 @@ Owners Page</title>
 </head>
 <link rel="stylesheet" href="main.css">
 <h1>
-    <img src="0387-2.jpg" alt="ownersonly" width="545" height="1040">
+
+    <img src="0387-2.jpg" alt="ownersonly" width="445" height="940">
+    <p><a href="MazeGame/index.html"><input type="button" class=button value= "Maze Game"></a></p>
     <p><a href="https://drive.google.com/file/d/1qrJfa5ru1qfgSs9vbAaBGM5CyXB7uJgr/view?usp=sharing"><input type="button" class=button value= "VIDEO"></a></p>
     <p><a href="http://bit.ly/3sxoqTV"><input type="button" class=button value= "SECRET FOLDER"></a></p>
     <p><a href="https://github.com/nosnowowie93347/"><input type="button" class=button value= "Dev GitHub"></a></p>
@@ -15,13 +17,14 @@ Owners Page</title>
     <p><a href="webhook.html"><input type="button" class=button value= "Webhook Sender"></a></p>
     <p><a href="Game/game.html"><input type="button" class=button value= "Typing Game (Not working on mobile)"></a></p>
     <p><a href="tictactoe/index.html"><input type="button" class=button value= "Tic tac toe Game"></a></p>
+    <p><a href="embedgen.html"><input type="button" class=button value= "Embed Generator"></a></p>
     <video width="320" height="240" controls>
  		 <source src="cutepuppy.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 	</video>
 
 </h1>
-<audio controls>
+<audio controls autoplay loop>
   <source src="YouTube (1).mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>

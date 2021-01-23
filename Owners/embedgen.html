@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)https://embed.rauf.wtf/ -->
+<html lang="en" prefix="og: http://ogp.me/ns#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Required meta tags -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <base href="https://embed.rauf.wtf/">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-colorpicker@3.2.0/dist/css/bootstrap-colorpicker.css">
+
+    <title>Pink's Embed Generator</title>
+  </head>
+  <body class="container p-2">
+    
+    <h1>Pink's Embed Generator</h1>
+    <div class="alert alert-warning" role="alert">
+      This is use at your own risk and I am not responsible for what happens by you using it.
+    </div>
+    <form id="embedGen">
+      <div class="form-group">
+        <label for="embedGenUrl">Domain To Use</label>
+        <select class="form-control" id="embedGenUrl" required="">
+          <option>embed.rauf.wtf</option>
+          <option>rauf.wtf/embed</option>
+          <option>test.rauf.workers.dev</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="embedGenAuthorText">Author Text</label>
+        <input type="text" class="form-control" id="embedGenAuthorText" placeholder="Author Text Here...">
+      </div>
+      <div class="form-group">
+        <label for="embedGenTitle">Title Text</label>
+        <input type="text" class="form-control" id="embedGenTitle" placeholder="Title Text Here...">
+      </div>
+      <div class="form-group colorpicker-element" id="embedGenColorDiv" data-colorpicker-id="1">
+        <label for="embedGenColor">Color</label>
+        <div class="input-group" id="embedGenColorDiv">
+          <input type="text" class="form-control" id="embedGenColor" value="#000000">
+          <span class="input-group-append">
+            <span class="input-group-text colorpicker-input-addon" data-original-title="" title="" tabindex="0">
+              <i style="background: rgb(219, 21, 21);"></i>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="embedGenImageUrl">Image URL</label>
+        <input type="text" class="form-control" id="embedGenImageUrl" placeholder="Image URL Here...">
+      </div>
+      <div class="form-group">
+        <label for="embedGenRedirectUrl">Redirect URL</label>
+        <input type="text" class="form-control" id="embedGenRedirectUrl" placeholder="Redirection URL Here...">
+      </div>
+      <button class="btn btn-primary btn-block" type="submit">Generate</button>
+      <br>
+      <div class="form-group" id="generatedUrl">
+        <label for="embedGenFinalUrl">Generated URL</label>
+        <input type="text" class="form-control" id="embedGenFinalUrl" value="" readonly="">
+      </div>
+    </form>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-colorpicker@3.2.0/dist/js/bootstrap-colorpicker.js"></script>
+    <script>
+      window.usingDefaultColor = true;
+      $(function () {
+        $("#embedGenColorDiv").colorpicker({
+          horizontal: true
+        });
+        $("#embedGenColorDiv").on("colorpickerChange", function (event) {
+          window.usingDefaultColor = false;
+        });
+      });
+    </script>
+    <script>
+      document.getElementById("embedGen").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const domain = document.getElementById("embedGenUrl").value;
+        const title = document.getElementById("embedGenTitle").value;
+        const author = document.getElementById("embedGenAuthorText").value;
+        const color = document.getElementById("embedGenColor").value;
+        const image = document.getElementById("embedGenImageUrl").value;
+        const redirect = document.getElementById("embedGenRedirectUrl").value;
+
+        const final = document.getElementById("embedGenFinalUrl");
+        const finalDiv = document.getElementById("generatedUrl");
+
+        let finalUrl = `https://${domain}/${
+          title ? title.replace(/\s/g, "+") : ""
+        }?`;
+        finalUrl += author ? `&author=${author.replace(/\s/g, "+")}` : "";
+        finalUrl += window.usingDefaultColor
+          ? ""
+          : `&color=${color.substring(1)}`;
+        finalUrl += image ? `&image=${image}` : "";
+        finalUrl += redirect ? `&url=${redirect}` : "";
+        console.log(finalUrl);
+        final.value = finalUrl;
+        finalDiv.hidden = false;
+      });
+    </script>
+  
+
+</body></html>
