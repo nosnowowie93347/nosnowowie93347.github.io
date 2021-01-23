@@ -1,4 +1,4 @@
-h1{
+h1 {
   color: white;
   font-family: 'Andy', 'Marquisette BTN', "Comic Sans MS", 'Lucida Sans', sans-serif;
   font-size: 290%;
@@ -6,7 +6,7 @@ h1{
   text-decoration: underline;
   text-align: center;
 }
-html {
+body {
 	background-color: rgb(64, 73, 121);
 }
 
