@@ -6,12 +6,34 @@ About Me</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="aboutme.css" rel="stylesheet" type="text/css" />
 </head>
+
+<style>
+.accordion {
+  background-color: #E5DEF1;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+</head>
 <body>
-    <div id="bodyy">
-    <div id="banner"><span>Your local time</span></div>
-    <div id="clock"></div>
-<script src="app.js"></script>
-  </div>
 <h1>
     About me
     <p class=hi>
@@ -21,23 +43,42 @@ About Me</title>
     <p><a href="https://steamcommunity.com/id/terrariamaster2002/"><input type="button" class=button value= "Dev Steam"></a></p>
     <p><a href="https://github.com/nosnowowie93347/"><input type="button" class=button value= "Dev GitHub"></a><br /><br /></p>
 </h1>
+<button class="accordion">How do I invite the bot?</button>
+<div class="panel">
+  <p>There is an invite link on the homepage of this site</p>
+</div>
 
-<table style="height: 100px;" width="565">
-    <tbody>
-    
-    <tr>
-    <td style="width: 180px;">About Command</td>
-    <td style="width: 182px;"><img src="AboutCommand.png"></td>
-    </tr>
-    <tr>
-    <td style="width: 180px;">Mute Command</td>
-    <td style="width: 182px;"><img src="MuteCommand.png" alt="image2"></td>
-    </tr>
-    <tr>
-    <td style="width: 180px;">Userinfo Command</td>
-    <td style="width: 182px;"><img src="UserinfoCommand.png" alt="image3"></td>
-    </tr>
-    </tbody>
-    </table>
+<button class="accordion">Do you accept feature requests?</button>
+<div class="panel">
+  <p>Absolutely! Terrabot has a suggest command</p>
+</div>
+
+<button class="accordion">Are you planning on verifying Terrabot?</button>
+<div class="panel">
+  <p>Honestly, probably not. I might at some point, but for now,no</p>
+</div>
+
+<button class="accordion">What is the bot's prefix?</button>
+<div class="panel">
+  <p>The bot has per-guild prefixes, allowing you to have a different prefix in  each guild. Get the current prefix by mentioning the bot. You can change it by using the prefix command. Example: <img src="ex.png"></p>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+
 </body>
 </html>

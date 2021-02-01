@@ -1,3 +1,7 @@
+html {
+  background-color: #2E71B6;
+}
+
 .button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,1), 0 17px 50px 0 rgba(0,0,0,1);
 }
@@ -8,17 +12,4 @@
 }
 .hi {
 	font-size: 122%;
-}
-table {
-  border-width: 2.5px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  border-style: solid;
-  border-color: brown;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-img {
-  border-radius: 10%;
 }

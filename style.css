@@ -29,6 +29,7 @@ p {
   font-weight: bold;
 }
 .button {
+  cursor: pointer;
   border-radius: 5%;
   font-size: 100%;
   background-color: magenta;
