@@ -4,6 +4,7 @@
 <title>
 About Me</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 <link href="aboutme.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -78,7 +79,22 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 </script>
-</body>
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
+</body>
+<form action="https://send.pageclip.co/v0xS8q0ILHp4PnEwT0Fnnmjr4D2aV5Yk/contact-form" className="pageclip-form" method="post">
+
+  <!-- This will be used in the email's reply-to field. Must have name="email" -->
+  <input type="email" name="email" value="bob@omg.com"/>
+
+  <!-- This will be used in the email's subject. Must have name="subject" -->
+  <input type="text" name="subject" value="Email subject"/>
+
+  <textarea name="body">Email body</textarea>
+
+  <button class="pageclip-form__submit" type="button">
+    <span>Submit</span>
+  </button>
+</form>
 </body>
 </html>
