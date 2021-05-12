@@ -82,19 +82,11 @@ for (i = 0; i < acc.length; i++) {
 <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
 </body>
-<form action="https://send.pageclip.co/v0xS8q0ILHp4PnEwT0Fnnmjr4D2aV5Yk/contact-form" className="pageclip-form" method="post">
-
-  <!-- This will be used in the email's reply-to field. Must have name="email" -->
-  <input type="email" name="email" value="bob@omg.com"/>
-
-  <!-- This will be used in the email's subject. Must have name="subject" -->
-  <input type="text" name="subject" value="Email subject"/>
-
-  <textarea name="body">Email body</textarea>
-
-  <button class="pageclip-form__submit" type="button">
-    <span>Submit</span>
-  </button>
+<form method="post" action="https://send.pageclip.co/{yourSiteKey}">
+  <input type="text" name="name" value="Billy Jean"/>
+  <input type="text" name="email" value="billy@example.com"/>
+  <input type="submit" value="Send">
 </form>
+
 </body>
 </html>
