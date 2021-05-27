@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>
-About Me</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
-<link href="aboutme.css" rel="stylesheet" type="text/css" />
-<link rel="shortcut icon" href="favicon.jpg?" />
-</head>
-
-<style>
-.accordion {
+  <head>
+    <title>
+    About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <link href="aboutme.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="favicon.jpg?" />
+  </head>
+  <style>
+  .accordion {
   background-color: #E5DEF1;
   color: #444;
   cursor: pointer;
@@ -21,75 +20,66 @@ About Me</title>
   outline: none;
   font-size: 15px;
   transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: #ccc; 
-}
-
-.panel {
+  }
+  .active, .accordion:hover {
+  background-color: #ccc;
+  }
+  .panel {
   padding: 0 18px;
   display: none;
   background-color: white;
   overflow: hidden;
-}
-</style>
+  }
+  </style>
 </head>
 <body>
-<h1>
-    About me
-    <p class=hi>
-        Hi, I'm Terrabot, created by Pinkalicious21902. I'm a Discord bot with several different commands. Have fun and enjoy using me :^)
-    </p>
-    <p><a href="mailto:pinkalicious1111111@gmail.com"><input type="button" class=button value= "Dev Email"></a></p>
-    <p><a href="https://steamcommunity.com/id/terrariamaster2002/"><input type="button" class=button value= "Dev Steam"></a></p>
-    <p><a href="https://github.com/nosnowowie93347/"><input type="button" class=button value= "Dev GitHub"></a><br /><br /></p>
-</h1>
-<button class="accordion">How do I invite the bot?</button>
-<div class="panel">
-  <p>There is an invite link on the homepage of this site</p>
-</div>
-
-<button class="accordion">Do you accept feature requests?</button>
-<div class="panel">
-  <p>Absolutely! Terrabot has a suggest command</p>
-</div>
-
-<button class="accordion">Are you planning on verifying Terrabot?</button>
-<div class="panel">
-  <p>Honestly, probably not. I might at some point, but for now,no</p>
-</div>
-
-<button class="accordion">What is the bot's prefix?</button>
-<div class="panel">
-  <p>The bot has per-guild prefixes, allowing you to have a different prefix in  each guild. Get the current prefix by mentioning the bot. You can change it by using the prefix command. Example: <img src="ex.png"></p>
-</div>
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
+  <h1>
+  About me
+  <p class=hi>
+    Hi, I'm Terrabot, created by Pinkalicious21902. I'm a Discord bot with several different commands. Have fun and enjoy using me :^)
+  </p>
+  <p><a href="mailto:pinkalicious1111111@gmail.com"><input type="button" class=button value= "Dev Email"></a></p>
+  <p><a href="https://steamcommunity.com/id/terrariamaster2002/"><input type="button" class=button value= "Dev Steam"></a></p>
+  <p><a href="https://github.com/nosnowowie93347/"><input type="button" class=button value= "Dev GitHub"></a><br /><br /></p>
+  </h1>
+  <button class="accordion">How do I invite the bot?</button>
+  <div class="panel">
+    <p>There is an invite link on the homepage of this site</p>
+  </div>
+  <button class="accordion">Do you accept feature requests?</button>
+  <div class="panel">
+    <p>Absolutely! Terrabot has a suggest command</p>
+  </div>
+  <button class="accordion">Are you planning on verifying Terrabot?</button>
+  <div class="panel">
+    <p>Honestly, probably not. I might at some point, but for now,no</p>
+  </div>
+  <button class="accordion">What is the bot's prefix?</button>
+  <div class="panel">
+    <p>The bot has per-guild prefixes, allowing you to have a different prefix in  each guild. Get the current prefix by mentioning the bot. You can change it by using the prefix command. Example: <img src="ex.png"></p>
+  </div>
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
+  this.classList.toggle("active");
+  var panel = this.nextElementSibling;
+  if (panel.style.display === "block") {
+  panel.style.display = "none";
+  } else {
+  panel.style.display = "block";
+  }
   });
-}
-</script>
-<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
-
+  }
+  </script>
+  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
-
 <form method="post" action="https://send.pageclip.co/v0xS8q0ILHp4PnEwT0Fnnmjr4D2aV5Yk">
   <input type="text" name="name" value="Name"/>
   <input type="text" name="email" value="Email"/>
   <input type="text" name="email body" value="Email body"/>
   <input type="submit" value="Send">
 </form>
-
 </body>
 </html>
