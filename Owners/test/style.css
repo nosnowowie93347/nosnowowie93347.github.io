@@ -1,0 +1,164 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  position: relative;
+  font-family: "BenchNine", sans-serif;
+}
+
+.skyrim {
+  height: 720px;
+  width: 1280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-size: 20px;
+  background: url(http://orig00.deviantart.net/06cb/f/2011/237/9/b/high_res_esv__skyrim_logo_icon_by_soapgoat-d47rexb.png) no-repeat 20% center, #101010;
+  overflow: hidden;
+}
+
+img.bethesda-logo {
+  height: 100px;
+  padding: 30px;
+}
+
+ul.menu {
+  list-style: none;
+  padding: 100px 60px;
+  margin: 0;
+  text-align: right;
+}
+ul.menu li {
+  text-transform: uppercase;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+ul.menu li:first-child {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+ul.menu li:last-child {
+  font-size: 18px;
+}
+ul.menu a {
+  text-decoration: none;
+  color: #777;
+}
+ul.menu a:hover {
+  color: #fff;
+}
+ul.menu a.active {
+  color: #fff;
+}
+
+.overlay {
+  height: 720px;
+  width: 250px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(340%, -50%);
+  opacity: 0;
+  transition: opacity 200ms linear, transform 200ms linear;
+}
+.overlay.active {
+  opacity: 1;
+  transform: translate(170%, -50%);
+  transition: opacity 300ms ease-out, transform 300ms ease-out;
+}
+.overlay .borders {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 235px;
+  border-left: 2px solid #444;
+  border-right: 2px solid #444;
+}
+.overlay .catcher {
+  position: absolute;
+  bottom: 100px;
+  left: 250px;
+  height: 200px;
+  width: 200px;
+}
+.overlay p {
+  margin: 0;
+  color: #fff;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.overlay__controls {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 100px;
+}
+.overlay .saves {
+  list-style: none;
+  padding: 40px;
+  margin: 0;
+}
+.overlay .saves li a {
+  color: #777;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.overlay .saves li a:hover {
+  color: #fff;
+}
+.overlay .saves li a:before {
+  padding-right: 10px;
+}
+.overlay .saves__quick a:before {
+  content: "QUICK";
+}
+.overlay .saves__auto a:before {
+  content: "AUTO";
+}
+.overlay .saves__index:nth-child(4) a:before {
+  content: "34";
+}
+.overlay .saves__index:nth-child(5) a:before {
+  content: "35";
+}
+.overlay .saves__index:nth-child(6) a:before {
+  content: "36";
+}
+
+.btn {
+  text-decoration: none;
+  color: #777;
+  font-weight: bold;
+}
+.btn:before {
+  color: #eee;
+  font-weight: normal;
+  border-top: 2px solid #777;
+  border-right: 1px solid #777;
+  border-bottom: 2px solid #777;
+  border-left: 1px solid #777;
+  border-radius: 5px;
+  margin-right: 3px;
+  padding: 0 1px;
+}
+.btn__yes:before {
+  content: "Enter";
+}
+.btn__no:before {
+  content: "Tab";
+}
