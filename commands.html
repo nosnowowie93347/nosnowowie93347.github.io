@@ -1,5 +1,12 @@
-<link rel="shortcut icon" href="favicon.jpg?" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="shortcut icon" href="favicon.jpg?" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link href="commands.css" rel="stylesheet" type="text/css" />
+</head>
 <style type="text/css">
 	table.tableizer-table {
 		font-size: 15px;
@@ -18,33 +25,113 @@
 	}
 </style>
 <table class="tableizer-table">
+    
+
+<body>
+  <h1>Terrabot's Commands: listed arguments are in order. The command is used with  the arguments in the given order. For example addrole user, role</p>
+
+<main class="st_viewport">
+  <div class="st_wrap_table" data-table_id="0">
+    <header class="st_table_header">
+      <h2>Admin Commands</h2>
+      <div class="st_row">
+        <div class="st_column _rank">Command Name</div>
+        <div class="st_column _name">Arguments</div>
+        <div class="st_column _surname">Description</div>
+      </div>
+    </header>
+    <div class="st_table">
+      <div class="st_row">
+        <div class="st_column _rank">Addrole</div>
+        <div class="st_column _name">user, role</div>
+        <div class="st_column _surname">Add a role to a user.</div>
+      </div>
+      <div class="st_row">
+        <div class="st_column _rank">Ban</div>
+        <div class="st_column _name">user, reason</div>
+        <div class="st_column _surname">Bans a user</div>
+      </div>
+      <div class="st_row">
+        <div class="st_column _rank">channelstats</div>
+        <div class="st_column _name">channel</div>
+        <div class="st_column _surname">Stats for the given channel</div>
+     </div>
+      <div class="st_row">
+        <div class="st_column _rank">cr</div>
+        <div class="st_column _name">rolename</div>
+        <div class="st_column _surname">create a role</div>
+      </div>
+      <div class="st_row">
+        <div class="st_column _rank">createtc</div>
+        <div class="st_column _name">name</div>
+        <div class="st_column _surname">create text channel</div>
+      </div>
+      <div class="st_row">
+        <div class="st_column _rank">deletetc</div>
+        <div class="st_column _name">channel</div>
+        <div class="st_column _surname">delete a text channel</div>
+    </div>
+      <div class="st_row">
+        <div class="st_column _rank">unban</div>
+        <div class="st_column _name">userid</div>
+        <div class="st_column _surname">Unban someone</div>
+      </div>
+      <div class="st_row">
+        <div class="st_column _rank">kick</div>
+        <div class="st_column _name">user, reason</div>
+        <div class="st_column _surname">kick a user</div>
+     </div>
+    </div>
+  </div>
+  <div class="st_wrap_table" data-table_id="1">
+    <header class="st_table_header">
+      <h2>Bot Stuff</h2>
+      <div class="st_row">
+        <div class="st_column _rank">command name</div>
+        <div class="st_column _name">arguments</div>
+        <div class="st_column _surname">description</div>
+      </div>
+    </header>
+    <div class="st_table">
+      <div class="st_row">
+        <div class="st_column _rank">about</div>
+        <div class="st_column _name">no args</div>
+        <div class="st_column _surname">about the bot</div>
+      </div>
+      <div class="st_row">
+        <div class="st_column _rank">inviteme</div>
+        <div class="st_column _name">no args</div>
+        <div class="st_column _surname">get the bots invite link</div>
+      </div>
+      <div class="st_row">
+        <div class="st_column _rank">joinedat</div>
+        <div class="st_column _name">user</div>
+        <div class="st_column _surname">Check when someone joined the server</div>
+     </div>
+      <div class="st_row">
+        <div class="st_column _rank">ping</div>
+        <div class="st_column _name">no args</div>
+        <div class="st_column _surname">ping!</div>
+      </div>
+      <div class="st_row">
+        <div class="st_column _rank">serverlist</div>
+        <div class="st_column _name">no args</div>
+        <div class="st_column _surname">list of servers the bot is in</div>
+      </div>
+      <div class="st_row">
+        <div class="st_column _rank">source</div>
+        <div class="st_column _name">no args</div>
+        <div class="st_column _surname">displays source code for the bot</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</main>
+
+
 <thead><tr class="tableizer-firstrow"><th>Cog Name</th><th>Command Name</th><th>Description</th></tr></thead><tbody>
- <tr><td>Admin</td><td>Addrole</td><td>Adds a role to a user</td></tr>
- <tr><td>Admin</td><td>Ban</td><td>Bans the mentioned user</td></tr>
- <tr><td>Admin</td><td>Channelstats</td><td>Get stats about the current channel</td></tr>
- <tr><td>Admin</td><td>cr</td><td>creates a role</td></tr>
- <tr><td>Admin</td><td>createtc</td><td>creates a text channel</td></tr>
- <tr><td>Admin</td><td>deletetc</td><td>Deletes a text channel</td></tr>
- <tr><td>Admin</td><td>delrole</td><td>Deletes a role</td></tr>
- <tr><td>Admin</td><td>edittc</td><td>Renames current channel</td></tr>
- <tr><td>Admin</td><td>getbans</td><td>Gets currently banned users</td></tr>
- <tr><td>Admin</td><td>hackban</td><td>Bans a user using their id</td></tr>
- <tr><td>Admin</td><td>kick</td><td>kick a user from the guild</td></tr>
- <tr><td>Admin</td><td>massban</td><td>ban multiple users by id</td></tr>
- <tr><td>Admin</td><td>pin</td><td>Pins a message to the current channel</td></tr>
- <tr><td>Admin</td><td>removerole</td><td>Remove a role from a user</td></tr>
- <tr><td>Admin</td><td>renamerole</td><td>rename a role</td></tr>
- <tr><td>Admin</td><td>unban</td><td>Unban a user by id</td></tr>
- <tr><td>Botstuff</td><td>about</td><td>Shows info about the bot</td></tr>
- <tr><td>Botstuff</td><td>cloc</td><td>How much code was written to power the bot</td></tr>
- <tr><td>Botstuff</td><td>inviteme</td><td>Gets the bot's invite link</td></tr>
- <tr><td>Botstuff</td><td>joinedat</td><td>Check when a user has joined the current server</td></tr>
- <tr><td>Botstuff</td><td>ping</td><td>just your average ping command</td></tr>
- <tr><td>Botstuff</td><td>platform</td><td>Displays the OS the bot is running on</td></tr>
- <tr><td>Botstuff</td><td>serverlist</td><td>Lists the servers the bot is in</td></tr>
- <tr><td>Botstuff</td><td>shutdown</td><td>OWNER ONLY! Shuts down the bot</td></tr>
- <tr><td>Botstuff</td><td>source</td><td>Displays the bot's source code</td></tr>
- <tr><td>Botstuff</td><td>unpin</td><td>Unpins a currently pinned message</td></tr>
+ 
  <tr><td>Cog3</td><td>dadjoke</td><td>Gets a dad joke</td></tr>
  <tr><td>Cog3</td><td>echo</td><td>Echos a message</td></tr>
  <tr><td>Cog3</td><td>echotts</td><td>Same as echo but with tts</td></tr>
