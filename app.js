@@ -1,5 +1,4 @@
 
-document.ready(function(){
   
   function displayTime() {
 
@@ -37,16 +36,12 @@ document.ready(function(){
       seconds = "0" + seconds;
     }
     
-    //jquery to change text of clockDiv html element
-    ("#clockDiv").text(hours +":"+ minutes +":"+ seconds + meridiem);
-    
-    //could also write this with vanilla JS as follows
-    //var clock = document.getElesmentById('clockDiv');
-   //clock.innerText = hours +":"+ minutes +":"+ seconds + meridiem;
+   
+    var clock = document.getElesmentById('clockDiv');
+   clock.innerText = hours +":"+ minutes +":"+ seconds + meridiem;
     
   }
   //run displayTime function
   displayTime();
   //set interval to 1000ms (1s), so that info updates every second
   setInterval(displayTime, 1000);
-});
