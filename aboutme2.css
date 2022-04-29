@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+ #about {
+  font-family: 'Architects Daughter', cursive;
+  color: palevioletred;
+  letter-spacing: .15em;
+  font-size: 115%;
+  background-color: #fdfdff;
+  padding: 10px 0;
+}
+ #about h2 {
+   display: block;
+   font-size: 38px;
+   font-weight: 400;
+   padding-bottom: 50px;
+   text-align: center;
+}
+#about div {
+  display: inline-block;
+    font-weight: 100;
+    letter-spacing: 1px;
+    /*line-height: 1.4em;*/
+    text-indent: 25px;
+    text-align: left;
+  }
