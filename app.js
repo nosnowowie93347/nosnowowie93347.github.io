@@ -37,7 +37,7 @@
     }
     
    
-    var clock = document.getElesmentById('clockDiv');
+    var clock = document.getElementById('clockDiv');
    clock.innerText = hours +":"+ minutes +":"+ seconds + meridiem;
     
   }
