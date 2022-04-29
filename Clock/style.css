@@ -1,23 +1,19 @@
-#bodyy {
-    margin: 200px auto;
-    text-align: center;
-    
+body{
+  background-color: #3D7590;
 }
 
-#banner {
-    font-size: 60px;
-    text-transform: uppercase;
-    background-color: rgb(224, 106, 106);
-    color: white;
+#clockDiv {
     height: 200px;
-    width: 80%;
-    margin: 0 auto;
-}
-#clock {
-    background-color: black;
-    font-size: 100px;
+    width: 800px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    padding-top: 30px;
+    font-family: courier, monospace;
+    text-align: center;
     color: white;
-    height: 400px;
-    width: 80%;
-    margin: 0 auto;
+    font-size: 100px;
+  border: solid 2px white;
+  background-color: #34647A;
+  border-radius: 30px;
 }
