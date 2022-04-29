@@ -1,5 +1,4 @@
 
-  
   function displayTime() {
 
     var time = new Date();
