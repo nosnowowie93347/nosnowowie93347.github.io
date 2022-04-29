@@ -38,7 +38,7 @@ document.ready(function(){
     }
     
     //jquery to change text of clockDiv html element
-    $("#clockDiv").text(hours +":"+ minutes +":"+ seconds + meridiem);
+    ("#clockDiv").text(hours +":"+ minutes +":"+ seconds + meridiem);
     
     //could also write this with vanilla JS as follows
     //var clock = document.getElesmentById('clockDiv');
