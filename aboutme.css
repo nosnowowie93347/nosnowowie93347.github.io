@@ -1,5 +1,5 @@
 html {
-  background-color: #2E71B6;
+  background-color: #3d90e5;
 }
 
 .button:hover {
@@ -8,5 +8,6 @@ html {
 .button {
     border: 3px solid #8e44ad;
     float: left;
+    box-sizing: border-box;
     font-size: 78%;
 }

@@ -3,11 +3,13 @@ body{
 }
 
 #clockDiv {
+  box-sizing: border-box;
     height: 200px;
     width: 800px;
     margin: auto;
     top: 0; left: 0; bottom: 0; right: 0;
     padding-top: 30px;
+    padding-bottom: 20px;
     font-family: courier, monospace;
     text-align: center;
     color: white;

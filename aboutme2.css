@@ -2,24 +2,30 @@
 
  #about {
   font-family: 'Architects Daughter', cursive;
-  color: palevioletred;
+  color: mediumvioletred;
   letter-spacing: .15em;
   font-size: 115%;
-  background-color: #fdfdff;
+  /*background-color: #fdfdff;*/
   padding: 10px 0;
 }
- #about h2 {
+#about h2 {
+  font-family: 'Architects Daughter', cursive;
    display: block;
    font-size: 38px;
    font-weight: 400;
-   padding-bottom: 50px;
+   padding-bottom: 12px;
    text-align: center;
 }
 #about div {
+  font-family: 'Architects Daughter', cursive;
   display: inline-block;
     font-weight: 100;
     letter-spacing: 1px;
     /*line-height: 1.4em;*/
-    text-indent: 25px;
+    text-indent: 15px;
     text-align: left;
   }
+.paragraph {
+  font-family: 'Architects Daughter', cursive;
+  padding-bottom: 10px;
+}

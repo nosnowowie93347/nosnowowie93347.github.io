@@ -1,6 +1,6 @@
 html {
   --scrollbarBG: #FFC0CB;
-  --thumbBG: #90A4AE;
+  --thumbBG: #C90076;
 }
 body::-webkit-scrollbar {
   width: 11px;
@@ -20,8 +20,8 @@ body::-webkit-scrollbar-thumb {
 
 h1 {
   color: white;
-  font-family: 'Andy', 'Marquisette BTN', "Comic Sans MS", 'Lucida Sans', sans-serif;
-  font-size: 290%;
+  font-family: 'Andy', 'Marquisette BTN', "Comic Sans MS", 'Lucida Sans', 'Times New Roman', sans-serif;
+  font-size: 288%;
   font-weight: bold;
   text-decoration: underline;
   text-align: center;
@@ -34,7 +34,7 @@ h3 {
   font-size: medium;
 	color: white;
 }
-p {
+.desc {
   font-size: 118.71%;
 	color: white;
 }
@@ -42,6 +42,10 @@ p {
   color: lightpink;
   font-size: medium;
   font-weight: bold;
+}
+.test {
+  padding-top: 45px;
+  box-sizing: border-box;
 }
 .btn-group {
     background-color: #4CAF50; /* Green background */
