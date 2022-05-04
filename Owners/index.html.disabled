@@ -20,7 +20,8 @@
         <a href="tictactoe/index.html"><button class="btn-group">Tic tac toe Game</button></a>
         <a href="embedgen.html"><button class="btn-group">Embed Generator</button></a>
         <a href="test/index.html"><button class="btn-group">Cool thing</button></a>
-        <p><br /></p>
+        <a href="hangman/index.html"><button class="btn-group">Hangman</button></a>
+        <a href="Memory/index.html"><button class="btn-group">Memory</button></a>
         <p><br /></p>
         <p><br /></p>
         <p><br /></p>
@@ -31,7 +32,6 @@
         <p><br /></p>
         <p><br /></p>
         <p><br /></p>
-
         <audio controls loop>
             <source src="YouTube (1).mp3" type="audio/mpeg"> Your browser does not support the audio element.
         </audio>
