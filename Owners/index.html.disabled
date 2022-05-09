@@ -8,10 +8,8 @@
     </head>
     <body>
         
-        <a href="MazeGame/index.html"><button class="btn-group">Maze Game</button></a>
         <a href="Todo List/index.html"><button class="btn-group">Todo List</button></a>
         <a href="https://bit.ly/3F7lyUD"><button class="btn-group">VIDEO</button></a>
-        <a href="result.html"><button class="btn-group">Flappy Bird</button></a>
         <a href="http://bit.ly/3sxoqTV"><button class="btn-group">Secret Folder</button></a>
         <a href="platformer.html"><button class="btn-group">Platformer game</button></a>
         <a href="https://github.com/nosnowowie93347/"><button class="btn-group">Dev GitHub</button></a>
