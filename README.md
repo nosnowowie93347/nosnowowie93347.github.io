@@ -1,1 +1,1 @@
-![GitHub repo file count (file type)](https://img.shields.io/github/directory-file-count/nosnowowie93347/nosnowowie93347.github.io?type=file)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?nosnowowie93347=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
