@@ -1,1 +1,1 @@
-https://img.shields.io/github/directory-file-count/nosnowowie93347/nosnowowie93347.github.io?type=file
+![GitHub repo file count (file type)](https://img.shields.io/github/directory-file-count/nosnowowie93347/nosnowowie93347.github.io?type=file)
