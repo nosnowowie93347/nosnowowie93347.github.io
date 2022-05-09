@@ -9,6 +9,7 @@
     <body>
         
         <a href="Todo List/index.html"><button class="btn-group">Todo List</button></a>
+        <a href="animation.html"><button class="btn-group">Cool Animation</button></a>
         <a href="https://bit.ly/3F7lyUD"><button class="btn-group">VIDEO</button></a>
         <a href="http://bit.ly/3sxoqTV"><button class="btn-group">Secret Folder</button></a>
         <a href="platformer.html"><button class="btn-group">Platformer game</button></a>
